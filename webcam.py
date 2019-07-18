@@ -55,8 +55,7 @@ def liveStream(cam, f_cascade):
     
 def main():
     # Image Detector
-    haar_face_cascade = cv2.CascadeClassifier('C:/Users/Tim/Miniconda3/pkgs/libopencv-3.4.1-h875b8b8_3/Library/etc/haarcascades/haarcascade_frontalface_alt2.xml')
-    #lbp_face_cascade = cv2.CascadeClassifier('C:/Users/Tim/Miniconda3/pkgs/libopencv-3.4.1-h875b8b8_3/Library/etc/lbpcascades/lbpcascade_frontalface.xml')
+    haar_face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
     #Initialize Camera
     cap = cv2.VideoCapture(0)
     liveStream(cap, haar_face_cascade)
